@@ -1,0 +1,822 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13480205E62ECE3230125809 /* Pods_WishListApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18C67C4D96CBDF16561EFCE /* Pods_WishListApp.framework */; };
+		485B44F227245DA9009422B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485B44F127245DA9009422B0 /* AppDelegate.swift */; };
+		485B44F427245DA9009422B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485B44F327245DA9009422B0 /* SceneDelegate.swift */; };
+		485B44F627245DA9009422B0 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485B44F527245DA9009422B0 /* StartViewController.swift */; };
+		485B44F927245DA9009422B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 485B44F727245DA9009422B0 /* Main.storyboard */; };
+		485B44FC27245DA9009422B0 /* WishListApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 485B44FA27245DA9009422B0 /* WishListApp.xcdatamodeld */; };
+		485B44FE27245DAB009422B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 485B44FD27245DAB009422B0 /* Assets.xcassets */; };
+		485B450127245DAB009422B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 485B44FF27245DAB009422B0 /* LaunchScreen.storyboard */; };
+		485B450C27245DAB009422B0 /* WishListAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485B450B27245DAB009422B0 /* WishListAppTests.swift */; };
+		485B451627245DAB009422B0 /* WishListAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485B451527245DAB009422B0 /* WishListAppUITests.swift */; };
+		485B451827245DAB009422B0 /* WishListAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485B451727245DAB009422B0 /* WishListAppUITestsLaunchTests.swift */; };
+		485B45292724837E009422B0 /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 485B45282724837E009422B0 /* logo.jpg */; };
+		7027DA5553F51CC008352D16 /* Pods_WishListApp_WishListAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B33B295E246502A7888CBB /* Pods_WishListApp_WishListAppUITests.framework */; };
+		8D20740F0B61F586BF21394A /* Pods_WishListAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA7D89B3BE859D70A5762C5 /* Pods_WishListAppTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		485B450827245DAB009422B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 485B44E627245DA9009422B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 485B44ED27245DA9009422B0;
+			remoteInfo = WishListApp;
+		};
+		485B451227245DAB009422B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 485B44E627245DA9009422B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 485B44ED27245DA9009422B0;
+			remoteInfo = WishListApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		331BFA591BCD42B642C6F5CA /* Pods-WishListAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WishListAppTests.release.xcconfig"; path = "Target Support Files/Pods-WishListAppTests/Pods-WishListAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		485B44EE27245DA9009422B0 /* WishListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WishListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		485B44F127245DA9009422B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		485B44F327245DA9009422B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		485B44F527245DA9009422B0 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		485B44F827245DA9009422B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		485B44FB27245DA9009422B0 /* WishListApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WishListApp.xcdatamodel; sourceTree = "<group>"; };
+		485B44FD27245DAB009422B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		485B450027245DAB009422B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		485B450227245DAB009422B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		485B450727245DAB009422B0 /* WishListAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WishListAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		485B450B27245DAB009422B0 /* WishListAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListAppTests.swift; sourceTree = "<group>"; };
+		485B451127245DAB009422B0 /* WishListAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WishListAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		485B451527245DAB009422B0 /* WishListAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListAppUITests.swift; sourceTree = "<group>"; };
+		485B451727245DAB009422B0 /* WishListAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		485B45282724837E009422B0 /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
+		70C8A1BECE9F6720DEC16938 /* Pods-WishListAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WishListAppTests.debug.xcconfig"; path = "Target Support Files/Pods-WishListAppTests/Pods-WishListAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		75B33B295E246502A7888CBB /* Pods_WishListApp_WishListAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WishListApp_WishListAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A208BF7C9C50C3B9BEB869D /* Pods-WishListApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WishListApp.release.xcconfig"; path = "Target Support Files/Pods-WishListApp/Pods-WishListApp.release.xcconfig"; sourceTree = "<group>"; };
+		ACF9B3A1F84ABA264C4CF332 /* Pods-WishListApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WishListApp.debug.xcconfig"; path = "Target Support Files/Pods-WishListApp/Pods-WishListApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C18C67C4D96CBDF16561EFCE /* Pods_WishListApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WishListApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA7D89B3BE859D70A5762C5 /* Pods_WishListAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WishListAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E067725035A4EAB698DD7BA6 /* Pods-WishListApp-WishListAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WishListApp-WishListAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-WishListApp-WishListAppUITests/Pods-WishListApp-WishListAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FF5C241FE72303B804D7F20E /* Pods-WishListApp-WishListAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WishListApp-WishListAppUITests.release.xcconfig"; path = "Target Support Files/Pods-WishListApp-WishListAppUITests/Pods-WishListApp-WishListAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		485B44EB27245DA9009422B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13480205E62ECE3230125809 /* Pods_WishListApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		485B450427245DAB009422B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D20740F0B61F586BF21394A /* Pods_WishListAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		485B450E27245DAB009422B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7027DA5553F51CC008352D16 /* Pods_WishListApp_WishListAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		485B44E527245DA9009422B0 = {
+			isa = PBXGroup;
+			children = (
+				485B44F027245DA9009422B0 /* WishListApp */,
+				485B450A27245DAB009422B0 /* WishListAppTests */,
+				485B451427245DAB009422B0 /* WishListAppUITests */,
+				485B44EF27245DA9009422B0 /* Products */,
+				56FEABF513BC6C492E29CB90 /* Pods */,
+				E794E9A49F99B289851D0D0C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		485B44EF27245DA9009422B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				485B44EE27245DA9009422B0 /* WishListApp.app */,
+				485B450727245DAB009422B0 /* WishListAppTests.xctest */,
+				485B451127245DAB009422B0 /* WishListAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		485B44F027245DA9009422B0 /* WishListApp */ = {
+			isa = PBXGroup;
+			children = (
+				485B44F127245DA9009422B0 /* AppDelegate.swift */,
+				485B44F327245DA9009422B0 /* SceneDelegate.swift */,
+				485B452427245EE5009422B0 /* View */,
+				485B44F527245DA9009422B0 /* StartViewController.swift */,
+				485B452527246095009422B0 /* Model */,
+				485B44F727245DA9009422B0 /* Main.storyboard */,
+				485B44FD27245DAB009422B0 /* Assets.xcassets */,
+				485B4527272460C1009422B0 /* Presenter */,
+				485B44FF27245DAB009422B0 /* LaunchScreen.storyboard */,
+				485B450227245DAB009422B0 /* Info.plist */,
+				485B45282724837E009422B0 /* logo.jpg */,
+				485B44FA27245DA9009422B0 /* WishListApp.xcdatamodeld */,
+			);
+			path = WishListApp;
+			sourceTree = "<group>";
+		};
+		485B450A27245DAB009422B0 /* WishListAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				485B450B27245DAB009422B0 /* WishListAppTests.swift */,
+			);
+			path = WishListAppTests;
+			sourceTree = "<group>";
+		};
+		485B451427245DAB009422B0 /* WishListAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				485B451527245DAB009422B0 /* WishListAppUITests.swift */,
+				485B451727245DAB009422B0 /* WishListAppUITestsLaunchTests.swift */,
+			);
+			path = WishListAppUITests;
+			sourceTree = "<group>";
+		};
+		485B452427245EE5009422B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		485B452527246095009422B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		485B4527272460C1009422B0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		56FEABF513BC6C492E29CB90 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACF9B3A1F84ABA264C4CF332 /* Pods-WishListApp.debug.xcconfig */,
+				7A208BF7C9C50C3B9BEB869D /* Pods-WishListApp.release.xcconfig */,
+				E067725035A4EAB698DD7BA6 /* Pods-WishListApp-WishListAppUITests.debug.xcconfig */,
+				FF5C241FE72303B804D7F20E /* Pods-WishListApp-WishListAppUITests.release.xcconfig */,
+				70C8A1BECE9F6720DEC16938 /* Pods-WishListAppTests.debug.xcconfig */,
+				331BFA591BCD42B642C6F5CA /* Pods-WishListAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E794E9A49F99B289851D0D0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C18C67C4D96CBDF16561EFCE /* Pods_WishListApp.framework */,
+				75B33B295E246502A7888CBB /* Pods_WishListApp_WishListAppUITests.framework */,
+				DAA7D89B3BE859D70A5762C5 /* Pods_WishListAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		485B44ED27245DA9009422B0 /* WishListApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 485B451B27245DAB009422B0 /* Build configuration list for PBXNativeTarget "WishListApp" */;
+			buildPhases = (
+				164FB6628876CC81885D74D3 /* [CP] Check Pods Manifest.lock */,
+				485B44EA27245DA9009422B0 /* Sources */,
+				485B44EB27245DA9009422B0 /* Frameworks */,
+				485B44EC27245DA9009422B0 /* Resources */,
+				6EAB60AFA83BA18D684AD6F3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WishListApp;
+			productName = WishListApp;
+			productReference = 485B44EE27245DA9009422B0 /* WishListApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		485B450627245DAB009422B0 /* WishListAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 485B451E27245DAB009422B0 /* Build configuration list for PBXNativeTarget "WishListAppTests" */;
+			buildPhases = (
+				AC54AC6D4CCE9B6016E94967 /* [CP] Check Pods Manifest.lock */,
+				485B450327245DAB009422B0 /* Sources */,
+				485B450427245DAB009422B0 /* Frameworks */,
+				485B450527245DAB009422B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				485B450927245DAB009422B0 /* PBXTargetDependency */,
+			);
+			name = WishListAppTests;
+			productName = WishListAppTests;
+			productReference = 485B450727245DAB009422B0 /* WishListAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		485B451027245DAB009422B0 /* WishListAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 485B452127245DAB009422B0 /* Build configuration list for PBXNativeTarget "WishListAppUITests" */;
+			buildPhases = (
+				7B70E155B5C4A260426FCC5B /* [CP] Check Pods Manifest.lock */,
+				485B450D27245DAB009422B0 /* Sources */,
+				485B450E27245DAB009422B0 /* Frameworks */,
+				485B450F27245DAB009422B0 /* Resources */,
+				0878FC288539783B6C40F41F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				485B451327245DAB009422B0 /* PBXTargetDependency */,
+			);
+			name = WishListAppUITests;
+			productName = WishListAppUITests;
+			productReference = 485B451127245DAB009422B0 /* WishListAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		485B44E627245DA9009422B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					485B44ED27245DA9009422B0 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					485B450627245DAB009422B0 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 485B44ED27245DA9009422B0;
+					};
+					485B451027245DAB009422B0 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 485B44ED27245DA9009422B0;
+					};
+				};
+			};
+			buildConfigurationList = 485B44E927245DA9009422B0 /* Build configuration list for PBXProject "WishListApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 485B44E527245DA9009422B0;
+			productRefGroup = 485B44EF27245DA9009422B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				485B44ED27245DA9009422B0 /* WishListApp */,
+				485B450627245DAB009422B0 /* WishListAppTests */,
+				485B451027245DAB009422B0 /* WishListAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		485B44EC27245DA9009422B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485B45292724837E009422B0 /* logo.jpg in Resources */,
+				485B450127245DAB009422B0 /* LaunchScreen.storyboard in Resources */,
+				485B44FE27245DAB009422B0 /* Assets.xcassets in Resources */,
+				485B44F927245DA9009422B0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		485B450527245DAB009422B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		485B450F27245DAB009422B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0878FC288539783B6C40F41F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WishListApp-WishListAppUITests/Pods-WishListApp-WishListAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WishListApp-WishListAppUITests/Pods-WishListApp-WishListAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WishListApp-WishListAppUITests/Pods-WishListApp-WishListAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		164FB6628876CC81885D74D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WishListApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EAB60AFA83BA18D684AD6F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WishListApp/Pods-WishListApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WishListApp/Pods-WishListApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WishListApp/Pods-WishListApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B70E155B5C4A260426FCC5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WishListApp-WishListAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC54AC6D4CCE9B6016E94967 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WishListAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		485B44EA27245DA9009422B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485B44FC27245DA9009422B0 /* WishListApp.xcdatamodeld in Sources */,
+				485B44F627245DA9009422B0 /* StartViewController.swift in Sources */,
+				485B44F227245DA9009422B0 /* AppDelegate.swift in Sources */,
+				485B44F427245DA9009422B0 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		485B450327245DAB009422B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485B450C27245DAB009422B0 /* WishListAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		485B450D27245DAB009422B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485B451627245DAB009422B0 /* WishListAppUITests.swift in Sources */,
+				485B451827245DAB009422B0 /* WishListAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		485B450927245DAB009422B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 485B44ED27245DA9009422B0 /* WishListApp */;
+			targetProxy = 485B450827245DAB009422B0 /* PBXContainerItemProxy */;
+		};
+		485B451327245DAB009422B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 485B44ED27245DA9009422B0 /* WishListApp */;
+			targetProxy = 485B451227245DAB009422B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		485B44F727245DA9009422B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				485B44F827245DA9009422B0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		485B44FF27245DAB009422B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				485B450027245DAB009422B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		485B451927245DAB009422B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		485B451A27245DAB009422B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		485B451C27245DAB009422B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACF9B3A1F84ABA264C4CF332 /* Pods-WishListApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WishListApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = by.olika14.WishListApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		485B451D27245DAB009422B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A208BF7C9C50C3B9BEB869D /* Pods-WishListApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WishListApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = by.olika14.WishListApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		485B451F27245DAB009422B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70C8A1BECE9F6720DEC16938 /* Pods-WishListAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = by.olika14.WishListAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WishListApp.app/WishListApp";
+			};
+			name = Debug;
+		};
+		485B452027245DAB009422B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 331BFA591BCD42B642C6F5CA /* Pods-WishListAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = by.olika14.WishListAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WishListApp.app/WishListApp";
+			};
+			name = Release;
+		};
+		485B452227245DAB009422B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E067725035A4EAB698DD7BA6 /* Pods-WishListApp-WishListAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = by.olika14.WishListAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WishListApp;
+			};
+			name = Debug;
+		};
+		485B452327245DAB009422B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF5C241FE72303B804D7F20E /* Pods-WishListApp-WishListAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = by.olika14.WishListAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WishListApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		485B44E927245DA9009422B0 /* Build configuration list for PBXProject "WishListApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				485B451927245DAB009422B0 /* Debug */,
+				485B451A27245DAB009422B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		485B451B27245DAB009422B0 /* Build configuration list for PBXNativeTarget "WishListApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				485B451C27245DAB009422B0 /* Debug */,
+				485B451D27245DAB009422B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		485B451E27245DAB009422B0 /* Build configuration list for PBXNativeTarget "WishListAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				485B451F27245DAB009422B0 /* Debug */,
+				485B452027245DAB009422B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		485B452127245DAB009422B0 /* Build configuration list for PBXNativeTarget "WishListAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				485B452227245DAB009422B0 /* Debug */,
+				485B452327245DAB009422B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		485B44FA27245DA9009422B0 /* WishListApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				485B44FB27245DA9009422B0 /* WishListApp.xcdatamodel */,
+			);
+			currentVersion = 485B44FB27245DA9009422B0 /* WishListApp.xcdatamodel */;
+			path = WishListApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 485B44E627245DA9009422B0 /* Project object */;
+}
