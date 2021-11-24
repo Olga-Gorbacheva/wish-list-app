@@ -7,9 +7,10 @@
 
 import UIKit
 
+
 class StartViewController: UIViewController {
     
-    let startButton = UIButton()
+     let startButton = UIButton()
     
     
 
@@ -19,6 +20,7 @@ class StartViewController: UIViewController {
         
         self.view.addSubview(startButton)
         startButton.translatesAutoresizingMaskIntoConstraints = false
+        
         
         NSLayoutConstraint.activate([
             
@@ -30,15 +32,8 @@ class StartViewController: UIViewController {
         ])
         
         startButton.setTitle("Start!", for: .normal)
-        //startButton.clipsToBounds = true
-        //startButton.contentMode = .scaleAspectFill
-        //startButton.setBackgroundImage(UIImage(named: "startbutton"), for: .normal)
         startButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 35)
         startButton.setTitleColor(.gray, for: .normal)
-        
-        // startButton.layer.cornerRadius = 3
-//        startButton.layer.borderWidth = 1
-//        startButton.layer.borderColor = UIColor.red.cgColor
         
         let backGroundImage = UIImageView(frame: UIScreen.main.bounds)
         backGroundImage.image = UIImage(named: "mainpicture")
@@ -54,7 +49,42 @@ class StartViewController: UIViewController {
             backGroundImage.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
        
+        startButton.addTarget(self, action: #selector(buttonStart), for: .touchUpInside)
         
+    }
+    
+    @objc func buttonStart(sender: UIButton!) {
+        
+        
+        let tabBarVC = UITabBarController()
+        
+        
+        let mainScreen = UINavigationController(rootViewController: HomeViewController())
+        let recipeScreen = UINavigationController(rootViewController: RecipeViewController())
+        let counterCaloriesScreen = UINavigationController(rootViewController: CounterViewController())
+        
+        mainScreen.title = "Counter"
+        recipeScreen.title = "Home"
+        counterCaloriesScreen.title = "Recipes"
+        
+        
+        tabBarVC.setViewControllers([mainScreen, recipeScreen, counterCaloriesScreen ], animated: false)
+        
+//        guard let items = tabBarVC.tabBar.items else {
+//            return
+//        }
+//        
+//        let images = ["star","house","heart"]
+//     
+//        
+//        for x in 0..<items.count {
+//            items[x].image = UIImage(systemName: images [x])
+//        }
+//            
+            
+        tabBarVC.modalPresentationStyle = .fullScreen
+        present(tabBarVC, animated: true)
+         
     }
 
 
