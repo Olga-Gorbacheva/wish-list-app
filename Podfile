@@ -7,6 +7,9 @@ target 'WishListApp' do
 
   # Pods for WishListApp
     pod 'Alamofire', '~> 5.4'
+    pod 'RxSwift', '~> 6.0'
+    pod 'RxCocoa', '~> 6.0'
+    pod 'Charts'
 
   target 'WishListAppTests' do
     inherit! :search_paths

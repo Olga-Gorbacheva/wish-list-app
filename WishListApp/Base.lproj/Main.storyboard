@@ -67,8 +67,24 @@
                     <view key="view" contentMode="scaleToFill" id="lQO-zj-T74">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JBU-gJ-YXY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="6B1-pF-TAA" id="RnW-SY-czg"/>
+                                    <outlet property="delegate" destination="6B1-pF-TAA" id="ve9-dn-EU5"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="wYk-FZ-Vxd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JBU-gJ-YXY" firstAttribute="top" secondItem="lQO-zj-T74" secondAttribute="top" id="SwV-Jm-6jJ"/>
+                            <constraint firstItem="JBU-gJ-YXY" firstAttribute="leading" secondItem="lQO-zj-T74" secondAttribute="leading" id="YVW-ud-ZJA"/>
+                            <constraint firstAttribute="trailing" secondItem="JBU-gJ-YXY" secondAttribute="trailing" id="fZi-lz-JkI"/>
+                            <constraint firstAttribute="bottom" secondItem="JBU-gJ-YXY" secondAttribute="bottom" id="wQg-X4-Hok"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Recipes" id="BVz-jb-DIN"/>
                 </viewController>

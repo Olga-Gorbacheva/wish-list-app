@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		13480205E62ECE3230125809 /* Pods_WishListApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18C67C4D96CBDF16561EFCE /* Pods_WishListApp.framework */; };
+		481879702731C99900EC51AA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4818796F2731C99900EC51AA /* HomeViewController.swift */; };
+		481879722731DE7B00EC51AA /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481879712731DE7B00EC51AA /* Product.swift */; };
+		48379E942742F5110046B44F /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48379E932742F5110046B44F /* RecipeViewController.swift */; };
+		48379E962742F78E0046B44F /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48379E952742F78E0046B44F /* CounterViewController.swift */; };
+		483F0576274947820097270A /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483F0575274947820097270A /* RecipeCell.swift */; };
+		483F057927494F1A0097270A /* SpoonacularClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483F057827494F1A0097270A /* SpoonacularClient.swift */; };
+		483F057B274AE3980097270A /* Extension + ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483F057A274AE3980097270A /* Extension + ViewController.swift */; };
+		483F057F274EE86C0097270A /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483F057E274EE86C0097270A /* Recipe.swift */; };
 		485B44F227245DA9009422B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485B44F127245DA9009422B0 /* AppDelegate.swift */; };
 		485B44F427245DA9009422B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485B44F327245DA9009422B0 /* SceneDelegate.swift */; };
 		485B44F627245DA9009422B0 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485B44F527245DA9009422B0 /* StartViewController.swift */; };
@@ -42,6 +50,14 @@
 
 /* Begin PBXFileReference section */
 		331BFA591BCD42B642C6F5CA /* Pods-WishListAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WishListAppTests.release.xcconfig"; path = "Target Support Files/Pods-WishListAppTests/Pods-WishListAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		4818796F2731C99900EC51AA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = WishListApp/HomeViewController.swift; sourceTree = SOURCE_ROOT; };
+		481879712731DE7B00EC51AA /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Product.swift; path = WishListApp/Product.swift; sourceTree = SOURCE_ROOT; };
+		48379E932742F5110046B44F /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		48379E952742F78E0046B44F /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
+		483F0575274947820097270A /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		483F057827494F1A0097270A /* SpoonacularClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpoonacularClient.swift; sourceTree = "<group>"; };
+		483F057A274AE3980097270A /* Extension + ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + ViewController.swift"; sourceTree = "<group>"; };
+		483F057E274EE86C0097270A /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		485B44EE27245DA9009422B0 /* WishListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WishListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		485B44F127245DA9009422B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		485B44F327245DA9009422B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +111,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		483F057727494EF40097270A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				483F057827494F1A0097270A /* SpoonacularClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		485B44E527245DA9009422B0 = {
 			isa = PBXGroup;
 			children = (
@@ -122,12 +146,11 @@
 			children = (
 				485B44F127245DA9009422B0 /* AppDelegate.swift */,
 				485B44F327245DA9009422B0 /* SceneDelegate.swift */,
-				485B452427245EE5009422B0 /* View */,
-				485B44F527245DA9009422B0 /* StartViewController.swift */,
+				485B452427245EE5009422B0 /* View Controllers */,
 				485B452527246095009422B0 /* Model */,
-				485B44F727245DA9009422B0 /* Main.storyboard */,
+				485B4527272460C1009422B0 /* View */,
 				485B44FD27245DAB009422B0 /* Assets.xcassets */,
-				485B4527272460C1009422B0 /* Presenter */,
+				485B44F727245DA9009422B0 /* Main.storyboard */,
 				485B44FF27245DAB009422B0 /* LaunchScreen.storyboard */,
 				485B450227245DAB009422B0 /* Info.plist */,
 				485B45282724837E009422B0 /* logo.jpg */,
@@ -153,25 +176,34 @@
 			path = WishListAppUITests;
 			sourceTree = "<group>";
 		};
-		485B452427245EE5009422B0 /* View */ = {
+		485B452427245EE5009422B0 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				485B44F527245DA9009422B0 /* StartViewController.swift */,
+				4818796F2731C99900EC51AA /* HomeViewController.swift */,
+				48379E932742F5110046B44F /* RecipeViewController.swift */,
+				48379E952742F78E0046B44F /* CounterViewController.swift */,
+				483F057A274AE3980097270A /* Extension + ViewController.swift */,
+				483F057727494EF40097270A /* Networking */,
 			);
-			path = View;
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		485B452527246095009422B0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				483F057E274EE86C0097270A /* Recipe.swift */,
+				481879712731DE7B00EC51AA /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		485B4527272460C1009422B0 /* Presenter */ = {
+		485B4527272460C1009422B0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				483F0575274947820097270A /* RecipeCell.swift */,
 			);
-			path = Presenter;
+			path = View;
 			sourceTree = "<group>";
 		};
 		56FEABF513BC6C492E29CB90 /* Pods */ = {
@@ -437,10 +469,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				483F057B274AE3980097270A /* Extension + ViewController.swift in Sources */,
+				481879702731C99900EC51AA /* HomeViewController.swift in Sources */,
 				485B44FC27245DA9009422B0 /* WishListApp.xcdatamodeld in Sources */,
+				483F057F274EE86C0097270A /* Recipe.swift in Sources */,
+				48379E942742F5110046B44F /* RecipeViewController.swift in Sources */,
 				485B44F627245DA9009422B0 /* StartViewController.swift in Sources */,
+				483F0576274947820097270A /* RecipeCell.swift in Sources */,
+				483F057927494F1A0097270A /* SpoonacularClient.swift in Sources */,
 				485B44F227245DA9009422B0 /* AppDelegate.swift in Sources */,
+				48379E962742F78E0046B44F /* CounterViewController.swift in Sources */,
 				485B44F427245DA9009422B0 /* SceneDelegate.swift in Sources */,
+				481879722731DE7B00EC51AA /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
