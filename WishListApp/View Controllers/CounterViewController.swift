@@ -14,23 +14,22 @@ class CounterViewController: UIViewController {
     @IBOutlet weak var healthStepper: UIStepper!
     @IBOutlet weak var fastFoodStepper: UIStepper!
     
-    var healtDataEntry = PieChartDataEntry(value: 0)
-    var fastFoodDataEntry = PieChartDataEntry(value: 0)
+    var waterDataEntry = PieChartDataEntry(value: 0)
+    var coffeeDataEntry = PieChartDataEntry(value: 0)
     
     var numberOfDownloadsDataEntries = [PieChartDataEntry]()
     
     
     @IBAction func countHealthFood(_ sender: UIStepper) {
         
-        healtDataEntry.value = sender.value
+        waterDataEntry.value = sender.value
         updateChartData()
         
     }
     
     @IBAction func countFastFood(_ sender: UIStepper) {
-        fastFoodDataEntry.value = sender.value
+        coffeeDataEntry.value = sender.value
         updateChartData()
-        
     }
     
     func updateChartData () {
@@ -42,21 +41,40 @@ class CounterViewController: UIViewController {
         chartDataSet.colors = colors as! [NSUIColor]
         
         pieChart.data = chartData
+        pieChart.centerText = "Food"
+        pieChart.entryLabelColor = .black
+        pieChart.entryLabelFont = .italicSystemFont(ofSize: 18)
         
     }
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
+        let backGroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backGroundImage.image = UIImage(named: "fontCounter")
+        backGroundImage.contentMode = UIView.ContentMode.scaleAspectFill
+        self.view.insertSubview(backGroundImage, at: 0)
+        
+        backGroundImage.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            backGroundImage.topAnchor.constraint(equalTo: view.topAnchor),
+            backGroundImage.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            backGroundImage.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            backGroundImage.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
+        
         
         pieChart.chartDescription?.text = ""
         
-        healtDataEntry.value = healthStepper.value
-        healtDataEntry.label = "Health Food"
+        waterDataEntry.value = healthStepper.value
+        waterDataEntry.label = "Water"
         
         
-        fastFoodDataEntry.value = fastFoodStepper.value
-        fastFoodDataEntry.label = "FastFood"
+        coffeeDataEntry.value = fastFoodStepper.value
+        coffeeDataEntry.label = "Coffee"
         
-        numberOfDownloadsDataEntries = [healtDataEntry, fastFoodDataEntry]
+        numberOfDownloadsDataEntries = [waterDataEntry, coffeeDataEntry]
         
         updateChartData()
     

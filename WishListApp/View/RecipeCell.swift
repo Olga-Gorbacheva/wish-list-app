@@ -1,5 +1,5 @@
 //
-//  CustomRecipeCell.swift
+//  RecipeCell.swift
 //  WishListApp
 //
 //  Created by Ольга Горбачева on 20.11.21.
