@@ -14,18 +14,25 @@ class RecipeViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var refreshButton: UIBarButtonItem!
     var activityIndicator: UIActivityIndicatorView!
     var recipes = [Recipe]()
-    static let cellIdentifier: String = "my-cell"
+   
   
     override func loadView() {
         super.loadView()
         setupView()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.isHidden = false
+        self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
+        
     }
     
     //MARK: - Setup View
     
     private func setupView() {
         self.title = "Recipes"
-        view.backgroundColor = .white
         setupTableView()
         setupRefreshButton()
         setupActivityIndicator()
@@ -36,6 +43,7 @@ class RecipeViewController: UIViewController, UITableViewDelegate, UITableViewDa
     private func setupRefreshButton() {
         refreshButton = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(refreshTapped))
         self.navigationItem.rightBarButtonItem = refreshButton
+        refreshButton.tintColor = UIColor(named: "fastFoodColour")
     }
     
     @objc func refreshTapped() {
@@ -45,12 +53,13 @@ class RecipeViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 10
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return recipes.count
     }
+
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! RecipeCell // извлекаем ячейку
@@ -68,14 +77,27 @@ class RecipeViewController: UIViewController, UITableViewDelegate, UITableViewDa
             }
         }
         return cell
-        
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        <#code#>
-//    }
-//
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let recipe = recipes[indexPath.row]
+        if recipe.ingredients?.count == 0 {
+            if let url = URL(string: recipe.sourceURL ?? "") {
+                if UIApplication.shared.canOpenURL(url) {
+                    UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                } else {
+                    self.presentAlert(title: "Recipe Unavailable", message: "")
+                }
+            } else {
+                self.presentAlert(title: "Recipe Unavailable", message: "")
+            }
+        } else {
+            let detailVC = DetailViewController()
+            detailVC.recipe = recipe
+            navigationController?.pushViewController(detailVC, animated: true)
+        }
+    }
+    
     private func setupActivityIndicator() {
         
         activityIndicatorContainer = UIView(frame: CGRect(x: 0, y: 0, width: 80, height: 80))

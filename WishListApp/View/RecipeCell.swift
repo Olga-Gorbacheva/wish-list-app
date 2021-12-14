@@ -18,14 +18,14 @@ class RecipeCell: UITableViewCell {
     let recipeTitle: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
-        label.font = .italicSystemFont(ofSize: 20)
+        label.font = UIFont(name: "PingFangHK-Light", size: 20)
         return label
     }()
     
     let durationTitle: UILabel = {
         let label = UILabel()
         label.textAlignment = .right
-        label.font = .systemFont(ofSize: 11)
+        label.font = UIFont(name: "PingFangHK-Light", size: 10)
         return label
     }()
     

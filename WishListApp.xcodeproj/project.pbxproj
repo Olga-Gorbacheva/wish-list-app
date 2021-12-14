@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		13480205E62ECE3230125809 /* Pods_WishListApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18C67C4D96CBDF16561EFCE /* Pods_WishListApp.framework */; };
+		48080FAF2758F2EC00E85315 /* bee.json in Resources */ = {isa = PBXBuildFile; fileRef = 48080FAE2758F2EC00E85315 /* bee.json */; };
+		480895C72766145200C2A4AA /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480895C62766145200C2A4AA /* NewTaskViewController.swift */; };
 		481879702731C99900EC51AA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4818796F2731C99900EC51AA /* HomeViewController.swift */; };
-		481879722731DE7B00EC51AA /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481879712731DE7B00EC51AA /* Product.swift */; };
 		48379E942742F5110046B44F /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48379E932742F5110046B44F /* RecipeViewController.swift */; };
 		48379E962742F78E0046B44F /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48379E952742F78E0046B44F /* CounterViewController.swift */; };
 		483F0576274947820097270A /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483F0575274947820097270A /* RecipeCell.swift */; };
@@ -18,7 +19,6 @@
 		483F057F274EE86C0097270A /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483F057E274EE86C0097270A /* Recipe.swift */; };
 		485B44F227245DA9009422B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485B44F127245DA9009422B0 /* AppDelegate.swift */; };
 		485B44F427245DA9009422B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485B44F327245DA9009422B0 /* SceneDelegate.swift */; };
-		485B44F627245DA9009422B0 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485B44F527245DA9009422B0 /* StartViewController.swift */; };
 		485B44F927245DA9009422B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 485B44F727245DA9009422B0 /* Main.storyboard */; };
 		485B44FC27245DA9009422B0 /* WishListApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 485B44FA27245DA9009422B0 /* WishListApp.xcdatamodeld */; };
 		485B44FE27245DAB009422B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 485B44FD27245DAB009422B0 /* Assets.xcassets */; };
@@ -27,6 +27,10 @@
 		485B451627245DAB009422B0 /* WishListAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485B451527245DAB009422B0 /* WishListAppUITests.swift */; };
 		485B451827245DAB009422B0 /* WishListAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485B451727245DAB009422B0 /* WishListAppUITestsLaunchTests.swift */; };
 		485B45292724837E009422B0 /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 485B45282724837E009422B0 /* logo.jpg */; };
+		4892EF632754244000204435 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4892EF622754244000204435 /* DetailViewController.swift */; };
+		4892EF65275426C700204435 /* CustomHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4892EF64275426C700204435 /* CustomHeaderCell.swift */; };
+		4892EF67275436BF00204435 /* InstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4892EF66275436BF00204435 /* InstructionViewController.swift */; };
+		489870B027691987004565C9 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489870AF27691987004565C9 /* StorageManager.swift */; };
 		7027DA5553F51CC008352D16 /* Pods_WishListApp_WishListAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B33B295E246502A7888CBB /* Pods_WishListApp_WishListAppUITests.framework */; };
 		8D20740F0B61F586BF21394A /* Pods_WishListAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA7D89B3BE859D70A5762C5 /* Pods_WishListAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -50,8 +54,9 @@
 
 /* Begin PBXFileReference section */
 		331BFA591BCD42B642C6F5CA /* Pods-WishListAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WishListAppTests.release.xcconfig"; path = "Target Support Files/Pods-WishListAppTests/Pods-WishListAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		48080FAE2758F2EC00E85315 /* bee.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bee.json; sourceTree = "<group>"; };
+		480895C62766145200C2A4AA /* NewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
 		4818796F2731C99900EC51AA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = WishListApp/HomeViewController.swift; sourceTree = SOURCE_ROOT; };
-		481879712731DE7B00EC51AA /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Product.swift; path = WishListApp/Product.swift; sourceTree = SOURCE_ROOT; };
 		48379E932742F5110046B44F /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		48379E952742F78E0046B44F /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 		483F0575274947820097270A /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
@@ -61,7 +66,6 @@
 		485B44EE27245DA9009422B0 /* WishListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WishListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		485B44F127245DA9009422B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		485B44F327245DA9009422B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		485B44F527245DA9009422B0 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		485B44F827245DA9009422B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		485B44FB27245DA9009422B0 /* WishListApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WishListApp.xcdatamodel; sourceTree = "<group>"; };
 		485B44FD27245DAB009422B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,6 +77,10 @@
 		485B451527245DAB009422B0 /* WishListAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListAppUITests.swift; sourceTree = "<group>"; };
 		485B451727245DAB009422B0 /* WishListAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		485B45282724837E009422B0 /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
+		4892EF622754244000204435 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4892EF64275426C700204435 /* CustomHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderCell.swift; sourceTree = "<group>"; };
+		4892EF66275436BF00204435 /* InstructionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionViewController.swift; sourceTree = "<group>"; };
+		489870AF27691987004565C9 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		70C8A1BECE9F6720DEC16938 /* Pods-WishListAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WishListAppTests.debug.xcconfig"; path = "Target Support Files/Pods-WishListAppTests/Pods-WishListAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		75B33B295E246502A7888CBB /* Pods_WishListApp_WishListAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WishListApp_WishListAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A208BF7C9C50C3B9BEB869D /* Pods-WishListApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WishListApp.release.xcconfig"; path = "Target Support Files/Pods-WishListApp/Pods-WishListApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,12 +119,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		483F057727494EF40097270A /* Networking */ = {
+		48080FAB2758EFBD00E85315 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				48080FAE2758F2EC00E85315 /* bee.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		480895C12760D44800C2A4AA /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				489870AF27691987004565C9 /* StorageManager.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		483F057727494EF40097270A /* API */ = {
 			isa = PBXGroup;
 			children = (
 				483F057827494F1A0097270A /* SpoonacularClient.swift */,
 			);
-			path = Networking;
+			path = API;
 			sourceTree = "<group>";
 		};
 		485B44E527245DA9009422B0 = {
@@ -146,6 +170,8 @@
 			children = (
 				485B44F127245DA9009422B0 /* AppDelegate.swift */,
 				485B44F327245DA9009422B0 /* SceneDelegate.swift */,
+				480895C12760D44800C2A4AA /* Storage */,
+				48080FAB2758EFBD00E85315 /* Lottie */,
 				485B452427245EE5009422B0 /* View Controllers */,
 				485B452527246095009422B0 /* Model */,
 				485B4527272460C1009422B0 /* View */,
@@ -179,12 +205,14 @@
 		485B452427245EE5009422B0 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				485B44F527245DA9009422B0 /* StartViewController.swift */,
 				4818796F2731C99900EC51AA /* HomeViewController.swift */,
+				480895C62766145200C2A4AA /* NewTaskViewController.swift */,
 				48379E932742F5110046B44F /* RecipeViewController.swift */,
+				4892EF622754244000204435 /* DetailViewController.swift */,
+				4892EF66275436BF00204435 /* InstructionViewController.swift */,
 				48379E952742F78E0046B44F /* CounterViewController.swift */,
 				483F057A274AE3980097270A /* Extension + ViewController.swift */,
-				483F057727494EF40097270A /* Networking */,
+				483F057727494EF40097270A /* API */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -193,7 +221,6 @@
 			isa = PBXGroup;
 			children = (
 				483F057E274EE86C0097270A /* Recipe.swift */,
-				481879712731DE7B00EC51AA /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -202,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				483F0575274947820097270A /* RecipeCell.swift */,
+				4892EF64275426C700204435 /* CustomHeaderCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -341,6 +369,7 @@
 				485B45292724837E009422B0 /* logo.jpg in Resources */,
 				485B450127245DAB009422B0 /* LaunchScreen.storyboard in Resources */,
 				485B44FE27245DAB009422B0 /* Assets.xcassets in Resources */,
+				48080FAF2758F2EC00E85315 /* bee.json in Resources */,
 				485B44F927245DA9009422B0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,18 +498,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4892EF67275436BF00204435 /* InstructionViewController.swift in Sources */,
 				483F057B274AE3980097270A /* Extension + ViewController.swift in Sources */,
 				481879702731C99900EC51AA /* HomeViewController.swift in Sources */,
 				485B44FC27245DA9009422B0 /* WishListApp.xcdatamodeld in Sources */,
 				483F057F274EE86C0097270A /* Recipe.swift in Sources */,
 				48379E942742F5110046B44F /* RecipeViewController.swift in Sources */,
-				485B44F627245DA9009422B0 /* StartViewController.swift in Sources */,
 				483F0576274947820097270A /* RecipeCell.swift in Sources */,
+				4892EF65275426C700204435 /* CustomHeaderCell.swift in Sources */,
+				480895C72766145200C2A4AA /* NewTaskViewController.swift in Sources */,
 				483F057927494F1A0097270A /* SpoonacularClient.swift in Sources */,
 				485B44F227245DA9009422B0 /* AppDelegate.swift in Sources */,
 				48379E962742F78E0046B44F /* CounterViewController.swift in Sources */,
+				489870B027691987004565C9 /* StorageManager.swift in Sources */,
 				485B44F427245DA9009422B0 /* SceneDelegate.swift in Sources */,
-				481879722731DE7B00EC51AA /* Product.swift in Sources */,
+				4892EF632754244000204435 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,6 +692,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P7M56436F9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WishListApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -688,6 +721,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P7M56436F9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WishListApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

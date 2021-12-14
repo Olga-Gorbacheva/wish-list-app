@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19461" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
-    <entity name="Product" representedClassName="Product" syncable="YES" codeGenerationType="class">
-        <attribute name="count" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="name" optional="YES" attributeType="String"/>
-        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProductCategory" inverseName="products" inverseEntity="ProductCategory"/>
+    <entity name="FoodRecipe" representedClassName="FoodRecipe" syncable="YES" codeGenerationType="class">
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+        <attribute name="sourceURL" optional="YES" attributeType="String"/>
+        <attribute name="timeRequired" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="ingredients" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Ingredient" inverseName="foodRecipe" inverseEntity="Ingredient"/>
+        <relationship name="instructions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Instruction" inverseName="foodRecipe" inverseEntity="Instruction"/>
     </entity>
-    <entity name="ProductCategory" representedClassName="ProductCategory" syncable="YES" codeGenerationType="class">
-        <attribute name="icon" optional="YES" attributeType="Binary"/>
-        <attribute name="name" optional="YES" attributeType="String"/>
-        <relationship name="products" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="category" inverseEntity="Product"/>
+    <entity name="Ingredient" representedClassName="Ingredient" syncable="YES" codeGenerationType="class">
+        <attribute name="ingredient" optional="YES" attributeType="String"/>
+        <attribute name="number" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="foodRecipe" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FoodRecipe" inverseName="ingredients" inverseEntity="FoodRecipe"/>
     </entity>
-    <entity name="WishList" representedClassName="WishList" syncable="YES" codeGenerationType="class">
-        <attribute name="data" optional="YES" attributeType="Binary"/>
-        <attribute name="name" optional="YES" attributeType="String"/>
-        <relationship name="productWish" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WishListMarkedItems" inverseName="product" inverseEntity="WishListMarkedItems"/>
+    <entity name="Instruction" representedClassName="Instruction" syncable="YES" codeGenerationType="class">
+        <attribute name="instruction" optional="YES" attributeType="String"/>
+        <attribute name="stepNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="foodRecipe" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FoodRecipe" inverseName="instructions" inverseEntity="FoodRecipe"/>
     </entity>
-    <entity name="WishListMarkedItems" representedClassName="WishListMarkedItems" syncable="YES" codeGenerationType="class">
-        <attribute name="bought" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
-        <attribute name="quanty" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <relationship name="product" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WishList" inverseName="productWish" inverseEntity="WishList"/>
+    <entity name="Task" representedClassName="Task" syncable="YES" codeGenerationType="class">
+        <attribute name="done" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="note" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="ProductCategory" positionX="-63" positionY="-18" width="128" height="74"/>
-        <element name="Product" positionX="-54" positionY="9" width="128" height="89"/>
-        <element name="WishList" positionX="-36" positionY="54" width="128" height="74"/>
-        <element name="WishListMarkedItems" positionX="-18" positionY="72" width="128" height="74"/>
+        <element name="FoodRecipe" positionX="-54" positionY="9" width="128" height="119"/>
+        <element name="Ingredient" positionX="-54" positionY="45" width="128" height="74"/>
+        <element name="Instruction" positionX="-45" positionY="54" width="128" height="74"/>
+        <element name="Task" positionX="-45" positionY="63" width="128" height="74"/>
     </elements>
 </model>

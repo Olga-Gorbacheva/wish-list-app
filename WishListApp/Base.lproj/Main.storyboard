@@ -30,11 +30,17 @@
             <objects>
                 <navigationController id="Gy7-Is-eTq" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Bring !" id="MFb-sl-dDg">
-                        <imageReference key="image" image="heart" catalog="system" renderingMode="original"/>
+                        <imageReference key="image" image="star" symbolScale="large" renderingMode="template"/>
+                        <color key="badgeColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="6"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ypC-ak-nwf">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                            <color key="textColor" red="0.50050643569999997" green="0.38144621699999998" blue="0.57481449839999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="f3l-gr-W1d" kind="relationship" relationship="rootViewController" id="MKb-sb-hiU"/>
@@ -51,14 +57,29 @@
                     <view key="view" contentMode="scaleToFill" id="du0-4h-atl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="DtP-3j-O5O">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="mp1-Pr-chQ"/>
                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DtP-3j-O5O" firstAttribute="top" secondItem="mp1-Pr-chQ" secondAttribute="top" id="4qM-kt-Wmr"/>
+                            <constraint firstItem="mp1-Pr-chQ" firstAttribute="trailing" secondItem="DtP-3j-O5O" secondAttribute="trailing" id="He0-eg-B2t"/>
+                            <constraint firstItem="DtP-3j-O5O" firstAttribute="leading" secondItem="mp1-Pr-chQ" secondAttribute="leading" id="dAc-TR-QzT"/>
+                            <constraint firstItem="mp1-Pr-chQ" firstAttribute="bottom" secondItem="DtP-3j-O5O" secondAttribute="bottom" id="u7s-EI-U7N"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Shopping List" id="WmV-AA-tEp"/>
+                    <connections>
+                        <outlet property="tableView" destination="DtP-3j-O5O" id="EKl-VU-8E9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Lh-2v-qqk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-510" y="1583"/>
+            <point key="canvasLocation" x="-510.14492753623193" y="1582.3660714285713"/>
         </scene>
         <!--Recipes-->
         <scene sceneID="PUa-8d-WFb">
@@ -163,6 +184,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <tabBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" red="0.87597831930000003" green="0.75973313340000004" blue="0.8134116213" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </tabBarAppearance>
+                        <tabBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" red="0.50050643569999997" green="0.38144621699999998" blue="0.57481449839999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </tabBarAppearance>
                     </tabBar>
                     <connections>
                         <segue destination="Gy7-Is-eTq" kind="relationship" relationship="viewControllers" id="0cB-kR-t99"/>
@@ -179,12 +206,21 @@
             <objects>
                 <navigationController id="Tlc-aa-J4A" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Recipes" id="hHy-Ym-I3h">
-                        <imageReference key="image" image="star.fill" catalog="system" symbolScale="large" renderingMode="original"/>
+                        <imageReference key="image" image="recipes" symbolScale="large" renderingMode="template"/>
                         <color key="badgeColor" systemColor="systemGreenColor"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="5"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="K2v-E9-taO">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.85042765060000003" green="0.78279589439999997" blue="0.91591566800000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                            <color key="textColor" red="0.50050643569999997" green="0.38144621699999998" blue="0.57481449839999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="6B1-pF-TAA" kind="relationship" relationship="rootViewController" id="rTG-hH-ui6"/>
@@ -199,12 +235,17 @@
             <objects>
                 <navigationController id="GGs-5n-s1l" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Counter" id="3tq-f2-MTd">
-                        <imageReference key="image" image="eye" catalog="system" renderingMode="original"/>
+                        <imageReference key="image" image="homebutton" symbolScale="large" renderingMode="template"/>
                         <color key="badgeColor" systemColor="systemGreenColor"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="5"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="JOC-cp-wGi">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                            <color key="textColor" red="0.50050643569999997" green="0.38144621699999998" blue="0.57481449839999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="s4i-lH-yRH" kind="relationship" relationship="rootViewController" id="2bJ-C4-2C4"/>
@@ -216,9 +257,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="eye" catalog="system" width="128" height="81"/>
-        <image name="heart" catalog="system" width="128" height="109"/>
-        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <image name="homebutton" width="40" height="40"/>
+        <image name="recipes" width="40" height="40"/>
+        <image name="star" width="40" height="40"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

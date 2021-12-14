@@ -10,6 +10,7 @@ target 'WishListApp' do
     pod 'RxSwift', '~> 6.0'
     pod 'RxCocoa', '~> 6.0'
     pod 'Charts'
+    pod 'lottie-ios'
 
   target 'WishListAppTests' do
     inherit! :search_paths
