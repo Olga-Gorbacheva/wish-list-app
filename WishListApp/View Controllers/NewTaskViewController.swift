@@ -95,7 +95,13 @@ class NewTaskViewController: UIViewController {
         super.viewDidLoad()
         setUpViews()
         setUpConstraints()
+        titleTextField.delegate = self
+        noteTextView.delegate = self
         view.backgroundColor = .systemIndigo
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
     
     @objc private func save() {

@@ -20,13 +20,18 @@ class HomeViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-//
+
         let jsonName = "bee"
         let animation = Animation.named(jsonName)
         let animationView = AnimationView(animation: animation)
-        animationView.frame = CGRect(x: 100, y: 350, width: 200, height: 200)
         view.addSubview(animationView)
-        animationView.play(fromProgress: 0, toProgress: 1, loopMode: LottieLoopMode.repeat(1000), completion: nil)
+        animationView.play(fromProgress: 0, toProgress: 10, loopMode: LottieLoopMode.repeat(1000), completion: nil)
+        animationView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            animationView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0),
+            animationView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 100),
+            animationView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -100)
+        ])
 
         fetchData()
     }
@@ -40,10 +45,13 @@ class HomeViewController: UIViewController {
     
     private func setupTableView() {
         
+        tableView.delegate = self
+        tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cell)
         tableView.rowHeight = 80
         view.backgroundColor = .systemGray6
-       
+        tableView.backgroundColor = UIColor(named: "tableHome")
+
     }
     
     private func setUpNavigationItem () {

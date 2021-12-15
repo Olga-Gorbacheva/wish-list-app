@@ -50,7 +50,7 @@
             </objects>
             <point key="canvasLocation" x="-509" y="749"/>
         </scene>
-        <!--Shopping List-->
+        <!--Wish List-->
         <scene sceneID="fhy-ja-YsL">
             <objects>
                 <viewController id="f3l-gr-W1d" customClass="HomeViewController" customModule="WishListApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -58,23 +58,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="DtP-3j-O5O">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NCT-db-Q3X">
+                                <rect key="frame" x="20" y="384" width="374" height="404"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mp1-Pr-chQ"/>
                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="DtP-3j-O5O" firstAttribute="top" secondItem="mp1-Pr-chQ" secondAttribute="top" id="4qM-kt-Wmr"/>
-                            <constraint firstItem="mp1-Pr-chQ" firstAttribute="trailing" secondItem="DtP-3j-O5O" secondAttribute="trailing" id="He0-eg-B2t"/>
-                            <constraint firstItem="DtP-3j-O5O" firstAttribute="leading" secondItem="mp1-Pr-chQ" secondAttribute="leading" id="dAc-TR-QzT"/>
-                            <constraint firstItem="mp1-Pr-chQ" firstAttribute="bottom" secondItem="DtP-3j-O5O" secondAttribute="bottom" id="u7s-EI-U7N"/>
+                            <constraint firstItem="mp1-Pr-chQ" firstAttribute="trailing" secondItem="NCT-db-Q3X" secondAttribute="trailing" constant="20" id="Ryr-Nc-R9J"/>
+                            <constraint firstItem="NCT-db-Q3X" firstAttribute="leading" secondItem="mp1-Pr-chQ" secondAttribute="leading" constant="20" id="ZbN-p2-o9u"/>
+                            <constraint firstItem="NCT-db-Q3X" firstAttribute="top" secondItem="mp1-Pr-chQ" secondAttribute="top" constant="296" id="afL-zg-Mw0"/>
+                            <constraint firstItem="mp1-Pr-chQ" firstAttribute="bottom" secondItem="NCT-db-Q3X" secondAttribute="bottom" constant="25" id="dj6-4d-o1G"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Shopping List" id="WmV-AA-tEp"/>
+                    <navigationItem key="navigationItem" title="Wish List" id="WmV-AA-tEp"/>
                     <connections>
-                        <outlet property="tableView" destination="DtP-3j-O5O" id="EKl-VU-8E9"/>
+                        <outlet property="tableView" destination="NCT-db-Q3X" id="vnK-RI-L1o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Lh-2v-qqk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

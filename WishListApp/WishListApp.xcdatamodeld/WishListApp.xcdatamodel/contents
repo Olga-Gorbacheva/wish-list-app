@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19461" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Counter" representedClassName="Counter" syncable="YES" codeGenerationType="class">
+        <attribute name="coffee" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="data" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="water" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
     <entity name="FoodRecipe" representedClassName="FoodRecipe" syncable="YES" codeGenerationType="class">
         <attribute name="image" optional="YES" attributeType="Binary"/>
         <attribute name="sourceURL" optional="YES" attributeType="String"/>
@@ -28,5 +33,6 @@
         <element name="Ingredient" positionX="-54" positionY="45" width="128" height="74"/>
         <element name="Instruction" positionX="-45" positionY="54" width="128" height="74"/>
         <element name="Task" positionX="-45" positionY="63" width="128" height="74"/>
+        <element name="Counter" positionX="-45" positionY="63" width="128" height="74"/>
     </elements>
 </model>

@@ -173,6 +173,7 @@
 				480895C12760D44800C2A4AA /* Storage */,
 				48080FAB2758EFBD00E85315 /* Lottie */,
 				485B452427245EE5009422B0 /* View Controllers */,
+				483F057727494EF40097270A /* API */,
 				485B452527246095009422B0 /* Model */,
 				485B4527272460C1009422B0 /* View */,
 				485B44FD27245DAB009422B0 /* Assets.xcassets */,
@@ -212,7 +213,6 @@
 				4892EF66275436BF00204435 /* InstructionViewController.swift */,
 				48379E952742F78E0046B44F /* CounterViewController.swift */,
 				483F057A274AE3980097270A /* Extension + ViewController.swift */,
-				483F057727494EF40097270A /* API */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
