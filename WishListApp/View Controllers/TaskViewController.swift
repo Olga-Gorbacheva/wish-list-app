@@ -14,7 +14,7 @@ class StartViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
         
         self.view.addSubview(startButton)
         startButton.translatesAutoresizingMaskIntoConstraints = false
