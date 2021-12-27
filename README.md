@@ -1,8 +1,7 @@
 # wish-list-app
 WishListApp creates an organized your wish list, suggests interesting recipes and includes the counter.
 
-![Иллюстрация к проекту]([url=https://ibb.co/B2xwJGm][img]https://i.ibb.co/TMSrG1Z/BE18-FD2-D-22-C0-4-EB9-B9-E1-4-A856-C4-D040-D.png[/img][/url])
-
+[Иллюстрация к проекту]![IMG_7842](https://user-images.githubusercontent.com/76954084/147479750-ff78d957-cc31-4735-8975-98f780418720.PNG)![IMG_7843](https://user-images.githubusercontent.com/76954084/147479920-8af92afa-81d3-4211-9887-ed2c37e18506.PNG)
 
 Основной использованный стэк: UIKit, Tab Bar Controller, Navigation Controller, CoreData, MVC, Tableview
 
